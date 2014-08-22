@@ -1,0 +1,522 @@
+2014-06-10 17:09:58 - Info - CheckPHPVersion
+2014-06-10 17:09:58 - Info - php.ini file(s): '/etc/php5/apache2/php.ini, /etc/php5/apache2/conf.d/ldap.ini, /etc/php5/apache2/conf.d/mcrypt.ini, /etc/php5/apache2/conf.d/mysql.ini, /etc/php5/apache2/conf.d/mysqli.ini, /etc/php5/apache2/conf.d/pdo.ini, /etc/php5/apache2/conf.d/pdo_mysql.ini'
+2014-06-10 17:09:58 - Info - Temporary directory for files upload (/tmp) is writable.
+2014-06-10 17:09:58 - Info - upload_max_filesize: 2M
+2014-06-10 17:09:58 - Info - post_max_size: 8M
+2014-06-10 17:09:58 - Info - max_file_uploads: 20
+2014-06-10 17:09:58 - Info - memory_limit is 134217728, ok.
+2014-06-10 17:09:58 - Info - session.save_path is: '/var/lib/php5'.
+2014-06-10 17:09:58 - Ok - The current PHP Version (5.3.10-1ubuntu3.11) is greater than the minimum version required to run iTop, which is (5.2.0)
+2014-06-10 17:09:58 - Ok - Required PHP extension(s): dom, hash, iconv, json, mysqli, pcre, session, simplexml, soap.
+2014-06-10 17:09:58 - Ok - Optional PHP extension(s): ldap, mcrypt.
+2014-06-10 17:09:58 - Ok - Loaded php.ini files: /etc/php5/apache2/php.ini, /etc/php5/apache2/conf.d/ldap.ini, /etc/php5/apache2/conf.d/mcrypt.ini, /etc/php5/apache2/conf.d/mysql.ini, /etc/php5/apache2/conf.d/mysqli.ini, /etc/php5/apache2/conf.d/pdo.ini, /etc/php5/apache2/conf.d/pdo_mysql.ini
+2014-06-10 17:09:58 - Ok - The value for session.save_path (/var/lib/php5) is writable for the web server.
+2014-06-10 17:10:02 - Info - CheckBackupPrerequisites
+2014-06-10 17:10:02 - Info - PHP functions disabled: pcntl_alarm,pcntl_fork,pcntl_waitpid,pcntl_wait,pcntl_wifexited,pcntl_wifstopped,pcntl_wifsignaled,pcntl_wexitstatus,pcntl_wtermsig,pcntl_wstopsig,pcntl_signal,pcntl_signal_dispatch,pcntl_get_last_error,pcntl_strerror,pcntl_sigprocmask,pcntl_sigwaitinfo,pcntl_sigtimedwait,pcntl_exec,pcntl_getpriority,pcntl_setpriority,
+2014-06-10 17:10:02 - Info - mysqldump -V said: mysqldump  Ver 10.13 Distrib 5.5.37, for debian-linux-gnu (x86_64)
+2014-06-10 17:10:03 - Info - operation 'async_action', peak memory usage. 8684240
+2014-06-10 17:10:12 - Info - operation 'async_action', peak memory usage. 8684232
+2014-06-10 17:10:16 - Info - operation 'async_action', peak memory usage. 8683360
+2014-06-10 17:10:17 - Info - operation 'async_action', peak memory usage. 8681984
+2014-06-10 17:11:40 - Error - The following modules have unmet dependencies: iTop ITIL Profiles Adaptor (id: teemip-profiles-itil-adaptor/2.0.0) depends on itop-profiles-itil/1.0.0 + teemip-ip-mgmt/2.0.0
+2014-06-10 17:17:09 - Info - ======= Installation starts =======
+Parameters:
+<?xml version="1.0" encoding="UTF-8"?>
+<installation>
+  <mode>install</mode>
+  <preinstall>
+    <copies type="array"/>
+  </preinstall>
+  <source_dir>datamodels/2.x/</source_dir>
+  <datamodel_version>2.0.2</datamodel_version>
+  <previous_configuration_file></previous_configuration_file>
+  <extensions_dir>extensions</extensions_dir>
+  <target_env>production</target_env>
+  <workspace_dir></workspace_dir>
+  <database>
+    <server>localhost</server>
+    <user>root</user>
+    <pwd>**removed**</pwd>
+    <name>itop</name>
+    <prefix>_itop</prefix>
+  </database>
+  <url>http://198.58.44.142/itop/</url>
+  <admin_account>
+    <user>admin</user>
+    <pwd>**removed**</pwd>
+    <language>EN US</language>
+  </admin_account>
+  <language>EN US</language>
+  <selected_modules type="array">
+    <item>authent-external</item>
+    <item>authent-ldap</item>
+    <item>authent-local</item>
+    <item>itop-profiles-itil</item>
+    <item>itop-sla-computation</item>
+    <item>itop-tickets</item>
+    <item>itop-welcome-itil</item>
+    <item>itop-config-mgmt</item>
+    <item>itop-attachments</item>
+    <item>itop-datacenter-mgmt</item>
+    <item>itop-endusers-devices</item>
+    <item>itop-storage-mgmt</item>
+    <item>itop-virtualization-mgmt</item>
+    <item>itop-bridge-virtualization-storage</item>
+    <item>itop-service-mgmt-provider</item>
+    <item>itop-request-mgmt-itil</item>
+    <item>itop-incident-mgmt-itil</item>
+    <item>itop-change-mgmt</item>
+    <item>itop-problem-mgmt</item>
+    <item>teemip-network-mgmt</item>
+    <item>teemip-ip-mgmt</item>
+    <item>teemip-ipv6-mgmt</item>
+    <item>teemip-storage-mgmt-adaptor</item>
+    <item>teemip-virtualization-mgmt-adaptor</item>
+    <item>teemip-config-mgmt-adaptor</item>
+  </selected_modules>
+  <sample_data></sample_data>
+  <old_addon></old_addon>
+  <options type="array"/>
+</installation>
+
+
+2014-06-10 17:17:09 - Info - operation 'async_action', peak memory usage. 8715200
+2014-06-10 17:17:09 - Info - operation 'async_action', peak memory usage. 8688720
+2014-06-10 17:17:09 - Info - Compiling data model.
+2014-06-10 17:17:17 - Info - Data model successfully compiled to '/var/www/itop/env-production'.
+2014-06-10 17:17:17 - Info - operation 'async_action', peak memory usage. 17385928
+2014-06-10 17:17:17 - Info - Update Database Schema for environment 'production'.
+2014-06-10 17:17:17 - Info - MetaModel::Startup (ModelOnly = 1)
+2014-06-10 17:17:19 - Info - Calling Module Handler: AttachmentInstaller::BeforeDatabaseCreation(oConfig, , 1.0.0)
+2014-06-10 17:17:19 - Info - Calling Module Handler: ConfigMgmtInstaller::BeforeDatabaseCreation(oConfig, , 2.0.0)
+2014-06-10 17:17:19 - Info - Calling Module Handler: EndUserMgmtInstaller::BeforeDatabaseCreation(oConfig, , 2.0.0)
+2014-06-10 17:17:19 - Info - Calling Module Handler: StorageMgmtInstaller::BeforeDatabaseCreation(oConfig, , 2.0.0)
+2014-06-10 17:17:19 - Info - Calling Module Handler: TicketsInstaller::BeforeDatabaseCreation(oConfig, , 2.0.0)
+2014-06-10 17:17:19 - Info - Calling Module Handler: ChangeManagementInstaller::BeforeDatabaseCreation(oConfig, , 2.0.0)
+2014-06-10 17:17:19 - Info - Calling Module Handler: ServiceMgmtProviderInstaller::BeforeDatabaseCreation(oConfig, , 2.0.0)
+2014-06-10 17:17:19 - Info - Creating the structure in 'itop' (table names prefixed by '_itop').
+2014-06-10 17:17:31 - Ok - Database structure successfully created.
+2014-06-10 17:17:31 - Info - Database Schema Successfully Updated for environment 'production'.
+2014-06-10 17:17:31 - Info - operation 'async_action', peak memory usage. 86486176
+2014-06-10 17:17:31 - Info - After Database Creation
+2014-06-10 17:17:32 - Info - MetaModel::Startup (ModelOnly = 1)
+2014-06-10 17:17:33 - Info - Calling Module Handler: AttachmentInstaller::AfterDatabaseCreation(oConfig, , 1.0.0)
+2014-06-10 17:17:33 - Info - Initializing attachment/item_org_id - null to zero
+2014-06-10 17:17:33 - Info - Initializing attachment/item_org_id - zero to the container
+2014-06-10 17:17:33 - Info - Initializing attachment/item_org_id - 0 records have been adjusted
+2014-06-10 17:17:33 - Info - Calling Module Handler: ConfigMgmtInstaller::AfterDatabaseCreation(oConfig, , 2.0.0)
+2014-06-10 17:17:33 - Info - Calling Module Handler: EndUserMgmtInstaller::AfterDatabaseCreation(oConfig, , 2.0.0)
+2014-06-10 17:17:33 - Info - Calling Module Handler: StorageMgmtInstaller::AfterDatabaseCreation(oConfig, , 2.0.0)
+2014-06-10 17:17:33 - Info - Calling Module Handler: TicketsInstaller::AfterDatabaseCreation(oConfig, , 2.0.0)
+2014-06-10 17:17:33 - Info - Calling Module Handler: ChangeManagementInstaller::AfterDatabaseCreation(oConfig, , 2.0.0)
+2014-06-10 17:17:33 - Info - Calling Module Handler: ServiceMgmtProviderInstaller::AfterDatabaseCreation(oConfig, , 2.0.0)
+2014-06-10 17:17:33 - Info - URP_Profiles::GetPredefinedObjects() returned 13 elements.
+2014-06-10 17:17:34 - Info - CreateAdminAccount
+2014-06-10 17:17:34 - Info - Administrator account 'admin' created.
+2014-06-10 17:17:34 - Info - Calling Module Handler: AttachmentInstaller::AfterDatabaseSetup(oConfig, , 1.0.0)
+2014-06-10 17:17:34 - Info - Calling Module Handler: ConfigMgmtInstaller::AfterDatabaseSetup(oConfig, , 2.0.0)
+2014-06-10 17:17:34 - Info - Calling Module Handler: EndUserMgmtInstaller::AfterDatabaseSetup(oConfig, , 2.0.0)
+2014-06-10 17:17:34 - Info - Calling Module Handler: StorageMgmtInstaller::AfterDatabaseSetup(oConfig, , 2.0.0)
+2014-06-10 17:17:34 - Info - Calling Module Handler: TicketsInstaller::AfterDatabaseSetup(oConfig, , 2.0.0)
+2014-06-10 17:17:34 - Info - Calling Module Handler: ChangeManagementInstaller::AfterDatabaseSetup(oConfig, , 2.0.0)
+2014-06-10 17:17:34 - Info - Calling Module Handler: ServiceMgmtProviderInstaller::AfterDatabaseSetup(oConfig, , 2.0.0)
+2014-06-10 17:17:34 - Info - operation 'async_action', peak memory usage. 84509592
+2014-06-10 17:17:35 - Info - MetaModel::Startup (ModelOnly = )
+2014-06-10 17:17:36 - Info - starting data load session
+2014-06-10 17:17:36 - Info - ending data load session
+2014-06-10 17:17:36 - Info - operation 'async_action', peak memory usage. 84058896
+2014-06-10 17:17:37 - Info - MetaModel::Startup (ModelOnly = 1)
+2014-06-10 17:17:40 - Info - Created configuration directory: /var/www/itop/conf/
+2014-06-10 17:17:40 - Info - operation 'async_action', peak memory usage. 84245000
+2014-06-10 18:29:34 - Error - Error: Object not following integrity rules: issues = Unexpected value for attribute 'parent_id': An object can not be its own parent in a hierarchy (Parent = 1), class = IPv4Block, id = 1.
+2014-06-26 20:04:02 - Error - Error: Error: objects have already been deleted!.
+2014-06-26 20:04:17 - Error - Error: Error: objects have already been deleted!.
+2014-06-27 21:54:42 - Error - Error: Missing query argument: expecting = login, available = {0=>current_contact_id}.
+2014-06-27 21:54:56 - Error - Error: Missing query argument: expecting = login, available = {0=>current_contact_id}.
+2014-06-30 17:44:35 - Info - The command to send mail: <strong>/usr/sbin/sendmail -t -i </strong>. To change this value, modify the 'sendmail_path' directive into /etc/php5/apache2/php.ini
+2014-06-30 17:44:35 - Ok - PHP settings are ok to proceed with a test of the email
+2014-07-03 16:39:29 - Info - The command to send mail: <strong>/usr/sbin/sendmail -t -i </strong>. To change this value, modify the 'sendmail_path' directive into /etc/php5/apache2/php.ini
+2014-07-03 16:39:29 - Ok - PHP settings are ok to proceed with a test of the email
+2014-07-03 16:39:44 - Info - The command to send mail: <strong>/usr/sbin/sendmail -t -i </strong>. To change this value, modify the 'sendmail_path' directive into /etc/php5/apache2/php.ini
+2014-07-03 16:39:44 - Ok - PHP settings are ok to proceed with a test of the email
+2014-07-03 16:40:04 - Error - No valid recipient for this message.
+2014-07-03 16:40:16 - Info - The command to send mail: <strong>/usr/sbin/sendmail -t -i </strong>. To change this value, modify the 'sendmail_path' directive into /etc/php5/apache2/php.ini
+2014-07-03 16:40:16 - Ok - PHP settings are ok to proceed with a test of the email
+2014-07-03 16:42:30 - Ok - The email has been sent, you may now check that the email will arrive...
+2014-07-11 18:09:03 - Info - The command to send mail: <strong>/usr/sbin/sendmail -t -i</strong>. To change this value, modify the 'sendmail_path' directive into /etc/php5/apache2/php.ini
+2014-07-11 18:09:03 - Ok - PHP settings are ok to proceed with a test of the email
+2014-07-14 17:54:35 - Info - The command to send mail: <strong>/usr/sbin/sendmail -t -i</strong>. To change this value, modify the 'sendmail_path' directive into /etc/php5/apache2/php.ini
+2014-07-14 17:54:35 - Ok - PHP settings are ok to proceed with a test of the email
+2014-07-14 18:20:16 - Error - Error: Could not find the object UserRequest/25.
+2014-07-14 18:20:34 - Error - Error: Could not find the object UserRequest/25.
+2014-07-14 18:22:25 - Error - Error: Could not find the object UserRequest/25.
+2014-07-14 18:45:03 - Error - Error: Could not find the object UserRequest/27.
+2014-07-14 18:47:50 - Error - Error: Could not find the object UserRequest/25.
+2014-07-14 18:48:01 - Error - Error: Could not find the object UserRequest/25.
+2014-07-14 21:23:17 - Error - Error: Could not find the object UserRequest/28.
+2014-07-21 19:49:09 - Info - CheckPHPVersion
+2014-07-21 19:49:09 - Info - php.ini file(s): '/etc/php5/apache2/php.ini, /etc/php5/apache2/conf.d/imap.ini, /etc/php5/apache2/conf.d/ldap.ini, /etc/php5/apache2/conf.d/mcrypt.ini, /etc/php5/apache2/conf.d/mysql.ini, /etc/php5/apache2/conf.d/mysqli.ini, /etc/php5/apache2/conf.d/pdo.ini, /etc/php5/apache2/conf.d/pdo_mysql.ini'
+2014-07-21 19:49:09 - Info - Temporary directory for files upload (/tmp) is writable.
+2014-07-21 19:49:09 - Info - upload_max_filesize: 2M
+2014-07-21 19:49:09 - Info - post_max_size: 8M
+2014-07-21 19:49:09 - Info - max_file_uploads: 20
+2014-07-21 19:49:09 - Info - memory_limit is 134217728, ok.
+2014-07-21 19:49:09 - Info - session.save_path is: '/var/lib/php5'.
+2014-07-21 19:49:09 - Ok - The current PHP Version (5.3.10-1ubuntu3.13) is greater than the minimum version required to run iTop, which is (5.2.0)
+2014-07-21 19:49:09 - Ok - Required PHP extension(s): dom, hash, iconv, json, mysqli, pcre, session, simplexml, soap.
+2014-07-21 19:49:09 - Ok - Optional PHP extension(s): ldap, mcrypt.
+2014-07-21 19:49:09 - Ok - Loaded php.ini files: /etc/php5/apache2/php.ini, /etc/php5/apache2/conf.d/imap.ini, /etc/php5/apache2/conf.d/ldap.ini, /etc/php5/apache2/conf.d/mcrypt.ini, /etc/php5/apache2/conf.d/mysql.ini, /etc/php5/apache2/conf.d/mysqli.ini, /etc/php5/apache2/conf.d/pdo.ini, /etc/php5/apache2/conf.d/pdo_mysql.ini
+2014-07-21 19:49:09 - Ok - The value for session.save_path (/var/lib/php5) is writable for the web server.
+2014-07-21 19:49:12 - Info - CheckBackupPrerequisites
+2014-07-21 19:49:12 - Info - PHP functions disabled: pcntl_alarm,pcntl_fork,pcntl_waitpid,pcntl_wait,pcntl_wifexited,pcntl_wifstopped,pcntl_wifsignaled,pcntl_wexitstatus,pcntl_wtermsig,pcntl_wstopsig,pcntl_signal,pcntl_signal_dispatch,pcntl_get_last_error,pcntl_strerror,pcntl_sigprocmask,pcntl_sigwaitinfo,pcntl_sigtimedwait,pcntl_exec,pcntl_getpriority,pcntl_setpriority,
+2014-07-21 19:49:12 - Info - mysqldump -V said: mysqldump  Ver 10.13 Distrib 5.5.38, for debian-linux-gnu (x86_64)
+2014-07-21 19:49:12 - Info - operation 'async_action', peak memory usage. 8686912
+2014-07-21 19:49:17 - Info - GetApplicationVersion returns: product_name: iTop, product_version: 2.0.2.1476
+2014-07-21 19:50:04 - Info - ======= Installation starts =======
+Parameters:
+<?xml version="1.0" encoding="UTF-8"?>
+<installation>
+  <mode>upgrade</mode>
+  <preinstall>
+    <copies type="array"/>
+    <backup>
+      <destination>/var/www/itop/data/iTop-backup-2014-07-21.zip</destination>
+      <configuration_file>/var/www/itop//conf/production/config-itop.php</configuration_file>
+    </backup>
+  </preinstall>
+  <source_dir>datamodels/2.x/</source_dir>
+  <datamodel_version>2.0.2</datamodel_version>
+  <previous_configuration_file>/var/www/itop//conf/production/config-itop.php</previous_configuration_file>
+  <extensions_dir>extensions</extensions_dir>
+  <target_env>production</target_env>
+  <workspace_dir></workspace_dir>
+  <database>
+    <server>localhost</server>
+    <user>root</user>
+    <pwd>**removed**</pwd>
+    <name>itop</name>
+    <prefix>_itop</prefix>
+  </database>
+  <url>http://itop.coredial.com/</url>
+  <admin_account>
+    <user></user>
+    <pwd>**removed**</pwd>
+    <language></language>
+  </admin_account>
+  <language></language>
+  <selected_modules type="array">
+    <item>authent-external</item>
+    <item>authent-ldap</item>
+    <item>authent-local</item>
+    <item>combodo-email-synchro</item>
+    <item>itop-profiles-itil</item>
+    <item>itop-sla-computation</item>
+    <item>itop-tickets</item>
+    <item>itop-welcome-itil</item>
+    <item>itop-config-mgmt</item>
+    <item>itop-attachments</item>
+    <item>itop-datacenter-mgmt</item>
+    <item>itop-endusers-devices</item>
+    <item>itop-storage-mgmt</item>
+    <item>itop-virtualization-mgmt</item>
+    <item>itop-bridge-virtualization-storage</item>
+    <item>itop-service-mgmt-provider</item>
+    <item>itop-request-mgmt-itil</item>
+    <item>itop-incident-mgmt-itil</item>
+    <item>itop-change-mgmt</item>
+    <item>itop-problem-mgmt</item>
+    <item>itop-simple-email-synchro</item>
+    <item>teemip-network-mgmt</item>
+    <item>teemip-ip-mgmt</item>
+    <item>teemip-ipv6-mgmt</item>
+    <item>teemip-storage-mgmt-adaptor</item>
+    <item>teemip-virtualization-mgmt-adaptor</item>
+    <item>teemip-config-mgmt-adaptor</item>
+  </selected_modules>
+  <sample_data></sample_data>
+  <old_addon></old_addon>
+  <options type="array"/>
+</installation>
+
+
+2014-07-21 19:50:04 - Info - operation 'async_action', peak memory usage. 8723928
+2014-07-21 19:50:04 - Info - operation 'async_action', peak memory usage. 8694720
+2014-07-21 19:50:04 - Info - Data file: '/tmp/itop-IJVr7i'
+2014-07-21 19:50:04 - Info - Starting backup of localhost/itop(suffix:'_itop')
+2014-07-21 19:50:04 - Info - Executing command: mysqldump --opt --default-character-set=utf8 --add-drop-database --single-transaction --host='localhost'  --user=xxxxx --password=xxxxx --result-file='/tmp/itop-IJVr7i' 'itop' '_itopapplicationsolution' '_itopasnumber' '_itopattachment' '_itopbrand' '_itopbusinessprocess' '_itopconnectableci' '_itopcontact' '_itopcontacttype' '_itopcontract' '_itopcontracttype' '_itopcustomercontract' '_itopdatabaseschema' '_itopdatacenterdevice' '_itopdbserver' '_itopdeliverymodel' '_itopdnsobject' '_itopdocument' '_itopdocumentfile' '_itopdocumentnote' '_itopdocumenttype' '_itopdocumentweb' '_itopdomain' '_itopenclosure' '_itopfarm' '_itopfiberchannelinterface' '_itopfunctionalci' '_itopgroup' '_itophypervisor' '_itopiosversion' '_itopipaddress' '_itopipaddressv4' '_itopipaddressv6' '_itopipblock' '_itopipblockv4' '_itopipblockv6' '_itopipconfig' '_itopipinterface' '_itopipobject' '_itopipphone' '_itopiprange' '_itopiprangeusage' '_itopiprangev4' '_itopiprangev6' '_itopipsubnet' '_itopipsubnetv4' '_itopipsubnetv6' '_itopipusage' '_itoplicence' '_itoplnkapplicationsolutiontobusinessprocess' '_itoplnkapplicationsolutiontofunctionalci' '_itoplnkconnectablecitonetworkdevice' '_itoplnkcontacttocontract' '_itoplnkcontacttofunctionalci' '_itoplnkcontacttoipobject' '_itoplnkcontacttoservice' '_itoplnkcontacttoticket' '_itoplnkcontracttodocument' '_itoplnkcustomercontracttofunctionalci' '_itoplnkcustomercontracttoprovidercontract' '_itoplnkcustomercontracttoservice' '_itoplnkdatacenterdevicetosan' '_itoplnkdeliverymodeltocontact' '_itoplnkdoctoipobject' '_itoplnkdocumenttofunctionalci' '_itoplnkdocumenttolicence' '_itoplnkdocumenttopatch' '_itoplnkdocumenttoservice' '_itoplnkdocumenttosoftware' '_itoplnkfunctionalcitoospatch' '_itoplnkfunctionalcitoprovidercontract' '_itoplnkfunctionalcitoticket' '_itoplnkgrouptoci' '_itoplnkipaddresstoipaddress' '_itoplnkipblocktolocation' '_itoplnkipinterfacetoipaddress' '_itoplnkipsubnettolocation' '_itoplnkipsubnettovlan' '_itoplnkpersontoteam' '_itoplnkphysicalinterfacetovlan' '_itoplnkservertovolume' '_itoplnkslatoslt' '_itoplnksoftwareinstancetosoftwarepatch' '_itoplnkvirtualdevicetovolume' '_itoplocation' '_itoplogicalinterface' '_itoplogicalvolume' '_itopmiddleware' '_itopmiddlewareinstance' '_itopmobilephone' '_itopmodel' '_itopnas' '_itopnasfilesystem' '_itopnetworkdevice' '_itopnetworkdevicetype' '_itopnetworkinterface' '_itoporganization' '_itoposfamily' '_itoposlicence' '_itopospatch' '_itoposversion' '_itopothersoftware' '_itoppatch' '_itoppc' '_itoppcsoftware' '_itoppdu' '_itopperipheral' '_itopperson' '_itopphone' '_itopphysicaldevice' '_itopphysicalinterface' '_itoppowerconnection' '_itoppowersource' '_itopprinter' '_itoppriv_action' '_itoppriv_action_email' '_itoppriv_action_notification' '_itoppriv_app_dashboards' '_itoppriv_app_preferences' '_itoppriv_async_send_email' '_itoppriv_async_task' '_itoppriv_auditcategory' '_itoppriv_auditrule' '_itoppriv_backgroundtask' '_itoppriv_change' '_itoppriv_changeop' '_itoppriv_changeop_create' '_itoppriv_changeop_delete' '_itoppriv_changeop_links' '_itoppriv_changeop_links_addremove' '_itoppriv_changeop_links_tune' '_itoppriv_changeop_plugin' '_itoppriv_changeop_setatt' '_itoppriv_changeop_setatt_data' '_itoppriv_changeop_setatt_encrypted' '_itoppriv_changeop_setatt_log' '_itoppriv_changeop_setatt_longtext' '_itoppriv_changeop_setatt_pwd' '_itoppriv_changeop_setatt_scalar' '_itoppriv_changeop_setatt_text' '_itoppriv_db_properties' '_itoppriv_event' '_itoppriv_event_email' '_itoppriv_event_issue' '_itoppriv_event_loginusage' '_itoppriv_event_notification' '_itoppriv_event_webservice' '_itoppriv_internaluser' '_itoppriv_link_action_trigger' '_itoppriv_module_install' '_itoppriv_query' '_itoppriv_query_oql' '_itoppriv_shortcut' '_itoppriv_shortcut_oql' '_itoppriv_sync_att' '_itoppriv_sync_att_extkey' '_itoppriv_sync_att_linkset' '_itoppriv_sync_datasource' '_itoppriv_sync_log' '_itoppriv_sync_replica' '_itoppriv_trigger' '_itoppriv_trigger_onobjcreate' '_itoppriv_trigger_onobject' '_itoppriv_trigger_onportalupdate' '_itoppriv_trigger_onstatechange' '_itoppriv_trigger_onstateenter' '_itoppriv_trigger_onstateleave' '_itoppriv_trigger_onwatermark' '_itoppriv_trigger_threshold' '_itoppriv_urp_profiles' '_itoppriv_urp_userorg' '_itoppriv_urp_userprofile' '_itoppriv_user' '_itoppriv_user_local' '_itopprovidercontract' '_itoprack' '_itopsanswitch' '_itopserver' '_itopservice' '_itopservicefamilly' '_itopservicesubcategory' '_itopsla' '_itopslt' '_itopsoftware' '_itopsoftwareinstance' '_itopsoftwarelicence' '_itopsoftwarepatch' '_itopstoragesystem' '_itopsynchro_data_test' '_itoptablet' '_itoptape' '_itoptapelibrary' '_itopteam' '_itoptelephonyci' '_itopticket' '_itopticket_change' '_itopticket_incident' '_itopticket_problem' '_itopticket_request' '_itoptypology' '_itopview_ASNumber' '_itopview_ActionEmail' '_itopview_ApplicationSolution' '_itopview_Attachment' '_itopview_Brand' '_itopview_BusinessProcess' '_itopview_Change' '_itopview_ConnectableCI' '_itopview_Contact' '_itopview_ContactType' '_itopview_Contract' '_itopview_ContractType' '_itopview_CustomerContract' '_itopview_DBServer' '_itopview_DNSObject' '_itopview_DatabaseSchema' '_itopview_DatacenterDevice' '_itopview_DeliveryModel' '_itopview_Document' '_itopview_DocumentFile' '_itopview_DocumentNote' '_itopview_DocumentType' '_itopview_DocumentWeb' '_itopview_Domain' '_itopview_Enclosure' '_itopview_Farm' '_itopview_FiberChannelInterface' '_itopview_FunctionalCI' '_itopview_Group' '_itopview_Hypervisor' '_itopview_IOSVersion' '_itopview_IPAddress' '_itopview_IPBlock' '_itopview_IPConfig' '_itopview_IPInterface' '_itopview_IPObject' '_itopview_IPPhone' '_itopview_IPRange' '_itopview_IPRangeUsage' '_itopview_IPSubnet' '_itopview_IPTriggerOnWaterMark' '_itopview_IPUsage' '_itopview_IPv4Address' '_itopview_IPv4Block' '_itopview_IPv4Range' '_itopview_IPv4Subnet' '_itopview_IPv6Address' '_itopview_IPv6Block' '_itopview_IPv6Range' '_itopview_IPv6Subnet' '_itopview_Incident' '_itopview_Licence' '_itopview_Location' '_itopview_LogicalInterface' '_itopview_LogicalVolume' '_itopview_Middleware' '_itopview_MiddlewareInstance' '_itopview_MobilePhone' '_itopview_Model' '_itopview_NAS' '_itopview_NASFileSystem' '_itopview_NetworkDevice' '_itopview_NetworkDeviceType' '_itopview_NetworkInterface' '_itopview_OSFamily' '_itopview_OSLicence' '_itopview_OSPatch' '_itopview_OSVersion' '_itopview_Organization' '_itopview_OtherSoftware' '_itopview_PC' '_itopview_PCSoftware' '_itopview_PDU' '_itopview_Patch' '_itopview_Peripheral' '_itopview_Person' '_itopview_Phone' '_itopview_PhysicalDevice' '_itopview_PhysicalInterface' '_itopview_PowerConnection' '_itopview_PowerSource' '_itopview_Printer' '_itopview_Problem' '_itopview_ProviderContract' '_itopview_Rack' '_itopview_SANSwitch' '_itopview_SLA' '_itopview_SLT' '_itopview_Server' '_itopview_Service' '_itopview_ServiceFamily' '_itopview_ServiceSubcategory' '_itopview_Software' '_itopview_SoftwareInstance' '_itopview_SoftwareLicence' '_itopview_SoftwarePatch' '_itopview_StorageSystem' '_itopview_Tablet' '_itopview_Tape' '_itopview_TapeLibrary' '_itopview_Team' '_itopview_TelephonyCI' '_itopview_Ticket' '_itopview_TriggerOnObjectCreate' '_itopview_TriggerOnPortalUpdate' '_itopview_TriggerOnStateEnter' '_itopview_TriggerOnStateLeave' '_itopview_TriggerOnThresholdReached' '_itopview_Typology' '_itopview_UserRequest' '_itopview_VLAN' '_itopview_VirtualDevice' '_itopview_VirtualHost' '_itopview_VirtualMachine' '_itopview_WANLink' '_itopview_WebApplication' '_itopview_WebServer' '_itopview_WorkOrder' '_itopview_lnkApplicationSolutionToBusinessProcess' '_itopview_lnkApplicationSolutionToFunctionalCI' '_itopview_lnkConnectableCIToNetworkDevice' '_itopview_lnkContactToContract' '_itopview_lnkContactToFunctionalCI' '_itopview_lnkContactToIPObject' '_itopview_lnkContactToService' '_itopview_lnkContactToTicket' '_itopview_lnkContractToDocument' '_itopview_lnkCustomerContractToFunctionalCI' '_itopview_lnkCustomerContractToProviderContract' '_itopview_lnkCustomerContractToService' '_itopview_lnkDeliveryModelToContact' '_itopview_lnkDocToIPObject' '_itopview_lnkDocumentToFunctionalCI' '_itopview_lnkDocumentToLicence' '_itopview_lnkDocumentToPatch' '_itopview_lnkDocumentToService' '_itopview_lnkDocumentToSoftware' '_itopview_lnkFunctionalCIToOSPatch' '_itopview_lnkFunctionalCIToProviderContract' '_itopview_lnkFunctionalCIToTicket' '_itopview_lnkGroupToCI' '_itopview_lnkIPAdressToIPAddress' '_itopview_lnkIPBlockToLocation' '_itopview_lnkIPInterfaceToIPAddress' '_itopview_lnkIPSubnetToLocation' '_itopview_lnkIPSubnetToVLAN' '_itopview_lnkPersonToTeam' '_itopview_lnkPhysicalInterfaceToVLAN' '_itopview_lnkSLAToSLT' '_itopview_lnkSanToDatacenterDevice' '_itopview_lnkServerToVolume' '_itopview_lnkSoftwareInstanceToSoftwarePatch' '_itopview_lnkTriggerAction' '_itopview_lnkVirtualDeviceToVolume' '_itopvirtualdevice' '_itopvirtualhost' '_itopvirtualmachine' '_itopvlan' '_itopwanlink' '_itopwebapplication' '_itopwebserver' '_itopworkorder'
+2014-07-21 19:50:06 - Info - Archive: /var/www/itop/data/iTop-backup-2014-07-21.zip created
+2014-07-21 19:50:06 - Info - operation 'async_action', peak memory usage. 8980936
+2014-07-21 19:50:06 - Info - Compiling data model.
+2014-07-21 19:50:08 - Info - Data model successfully compiled to '/var/www/itop/env-production'.
+2014-07-21 19:50:08 - Info - operation 'async_action', peak memory usage. 17400056
+2014-07-21 19:50:08 - Info - Update Database Schema for environment 'production'.
+2014-07-21 19:50:08 - Info - MetaModel::Startup (ModelOnly = 1)
+2014-07-21 19:50:09 - Info - Renaming '_itoppriv_internalUser' into '_itoppriv_internaluser' (lowercase)
+2014-07-21 19:50:09 - Info - Renaming '_itoppriv_internalUser' failed (already done in a previous upgrade?)
+2014-07-21 19:50:09 - Info - Calling Module Handler: AttachmentInstaller::BeforeDatabaseCreation(oConfig, 1.0.0, 1.0.0)
+2014-07-21 19:50:09 - Info - Calling Module Handler: ConfigMgmtInstaller::BeforeDatabaseCreation(oConfig, 2.0.0, 2.0.0)
+2014-07-21 19:50:09 - Info - Changing enum in DB - Software::type from 'DBserver' to 'DBServer' (just a change in the case)
+2014-07-21 19:50:09 - Info - Changing enum in DB - Software::type from 'Webserver' to 'WebServer' (just a change in the case)
+2014-07-21 19:50:09 - Info - Changing enum in DB - Model::type from 'SANswitch' to 'SANSwitch' (just a change in the case)
+2014-07-21 19:50:09 - Info - Changing enum in DB - Model::type from 'IpPhone' to 'IPPhone' (just a change in the case)
+2014-07-21 19:50:09 - Info - Renaming class in DB - final class from 'DBserver' to 'DBServer': 0 rows affected
+2014-07-21 19:50:09 - Info - Renaming class in DB - final class from 'OSfamily' to 'OSFamily': 0 rows affected
+2014-07-21 19:50:09 - Info - Renaming class in DB - final class from 'OSversion' to 'OSVersion': 0 rows affected
+2014-07-21 19:50:09 - Info - Renaming class in DB - final class from 'Webserver' to 'WebServer': 0 rows affected
+2014-07-21 19:50:09 - Info - Renaming class in DB - final class from 'OSpatch' to 'OSPatch': 0 rows affected
+2014-07-21 19:50:09 - Info - Renaming class in DB - final class from 'OsLicence' to 'OSLicence': 0 rows affected
+2014-07-21 19:50:09 - Info - Renaming class in DB - final class from 'IOSversion' to 'IOSVersion': 0 rows affected
+2014-07-21 19:50:09 - Info - Renaming class in DB - final class from 'IPinterface' to 'IPInterface': 0 rows affected
+2014-07-21 19:50:09 - Info - Calling Module Handler: EndUserMgmtInstaller::BeforeDatabaseCreation(oConfig, 2.0.0, 2.0.0)
+2014-07-21 19:50:09 - Info - Renaming class in DB - final class from 'IpPhone' to 'IPPhone': 0 rows affected
+2014-07-21 19:50:09 - Info - Calling Module Handler: StorageMgmtInstaller::BeforeDatabaseCreation(oConfig, 2.0.0, 2.0.0)
+2014-07-21 19:50:09 - Info - Calling Module Handler: TicketsInstaller::BeforeDatabaseCreation(oConfig, 2.0.0, 2.0.0)
+2014-07-21 19:50:09 - Info - Calling Module Handler: ChangeManagementInstaller::BeforeDatabaseCreation(oConfig, 2.0.0, 2.0.0)
+2014-07-21 19:50:09 - Info - Calling Module Handler: ServiceMgmtProviderInstaller::BeforeDatabaseCreation(oConfig, 2.0.0, 2.0.0)
+2014-07-21 19:50:09 - Info - Changing enum in DB - SLT::request_type from 'servicerequest' to 'service_request'
+2014-07-21 19:50:09 - Info - Changing enum in DB - 0 rows updated
+2014-07-21 19:50:09 - Info - Changing enum in DB - removed useless value 'servicerequest'
+2014-07-21 19:50:09 - Info - Creating the structure in 'itop' (table names prefixed by '_itop').
+2014-07-21 19:50:11 - Ok - Database structure successfully updated.
+2014-07-21 19:50:11 - Ok - Hierchical keys rebuilt: The attribute parent_id from Organization is a hierarchical key.
+Rebuilding the fields parent_id_right and parent_id_left from table '_itoporganization'...
+Ok, table '_itoporganization' successfully updated.
+The attribute parent_id from Group is a hierarchical key.
+Rebuilding the fields parent_id_right and parent_id_left from table '_itopgroup'...
+Ok, table '_itopgroup' successfully updated.
+The attribute parent_id from Domain is a hierarchical key.
+Rebuilding the fields parent_id_right and parent_id_left from table '_itopdomain'...
+Ok, table '_itopdomain' successfully updated.
+The attribute parent_id from IPv4Block is a hierarchical key.
+Rebuilding the fields parent_id_right and parent_id_left from table '_itopipblockv4'...
+Ok, table '_itopipblockv4' successfully updated.
+The attribute parent_id from IPv6Block is a hierarchical key.
+Rebuilding the fields parent_id_right and parent_id_left from table '_itopipblockv6'...
+Ok, table '_itopipblockv6' successfully updated.
+
+2014-07-21 19:50:12 - Ok - Data sources checked: Checking Data Source 'Test'...
+Ok.
+
+2014-07-21 19:50:12 - Info - Database Schema Successfully Updated for environment 'production'.
+2014-07-21 19:50:12 - Info - operation 'async_action', peak memory usage. 92034344
+2014-07-21 19:50:12 - Info - After Database Creation
+2014-07-21 19:50:12 - Info - MetaModel::Startup (ModelOnly = 1)
+2014-07-21 19:50:12 - Info - Calling Module Handler: AttachmentInstaller::AfterDatabaseCreation(oConfig, 1.0.0, 1.0.0)
+2014-07-21 19:50:12 - Info - Initializing attachment/item_org_id - null to zero
+2014-07-21 19:50:12 - Info - Initializing attachment/item_org_id - zero to the container
+2014-07-21 19:50:12 - Info - Initializing attachment/item_org_id - 0 records have been adjusted
+2014-07-21 19:50:12 - Info - Calling Module Handler: ConfigMgmtInstaller::AfterDatabaseCreation(oConfig, 2.0.0, 2.0.0)
+2014-07-21 19:50:12 - Info - Calling Module Handler: EndUserMgmtInstaller::AfterDatabaseCreation(oConfig, 2.0.0, 2.0.0)
+2014-07-21 19:50:12 - Info - Calling Module Handler: StorageMgmtInstaller::AfterDatabaseCreation(oConfig, 2.0.0, 2.0.0)
+2014-07-21 19:50:12 - Info - Calling Module Handler: TicketsInstaller::AfterDatabaseCreation(oConfig, 2.0.0, 2.0.0)
+2014-07-21 19:50:12 - Info - Calling Module Handler: ChangeManagementInstaller::AfterDatabaseCreation(oConfig, 2.0.0, 2.0.0)
+2014-07-21 19:50:12 - Info - Calling Module Handler: ServiceMgmtProviderInstaller::AfterDatabaseCreation(oConfig, 2.0.0, 2.0.0)
+2014-07-21 19:50:12 - Info - URP_Profiles::GetPredefinedObjects() returned 13 elements.
+2014-07-21 19:50:12 - Info - Calling Module Handler: AttachmentInstaller::AfterDatabaseSetup(oConfig, 1.0.0, 1.0.0)
+2014-07-21 19:50:12 - Info - Calling Module Handler: ConfigMgmtInstaller::AfterDatabaseSetup(oConfig, 2.0.0, 2.0.0)
+2014-07-21 19:50:12 - Info - Calling Module Handler: EndUserMgmtInstaller::AfterDatabaseSetup(oConfig, 2.0.0, 2.0.0)
+2014-07-21 19:50:12 - Info - Calling Module Handler: StorageMgmtInstaller::AfterDatabaseSetup(oConfig, 2.0.0, 2.0.0)
+2014-07-21 19:50:12 - Info - Calling Module Handler: TicketsInstaller::AfterDatabaseSetup(oConfig, 2.0.0, 2.0.0)
+2014-07-21 19:50:12 - Info - Calling Module Handler: ChangeManagementInstaller::AfterDatabaseSetup(oConfig, 2.0.0, 2.0.0)
+2014-07-21 19:50:12 - Info - Calling Module Handler: ServiceMgmtProviderInstaller::AfterDatabaseSetup(oConfig, 2.0.0, 2.0.0)
+2014-07-21 19:50:12 - Info - operation 'async_action', peak memory usage. 85982880
+2014-07-21 19:50:13 - Info - MetaModel::Startup (ModelOnly = )
+2014-07-21 19:50:13 - Info - starting data load session
+2014-07-21 19:50:13 - Info - ending data load session
+2014-07-21 19:50:13 - Info - operation 'async_action', peak memory usage. 85194784
+2014-07-21 19:50:13 - Info - MetaModel::Startup from /var/www/itop//conf/production/config-itop.php (ModelOnly = 1)
+2014-07-21 19:50:15 - Info - operation 'async_action', peak memory usage. 85527400
+2014-07-21 21:27:23 - Info - CheckPHPVersion
+2014-07-21 21:27:23 - Info - php.ini file(s): '/etc/php5/apache2/php.ini, /etc/php5/apache2/conf.d/imap.ini, /etc/php5/apache2/conf.d/ldap.ini, /etc/php5/apache2/conf.d/mcrypt.ini, /etc/php5/apache2/conf.d/mysql.ini, /etc/php5/apache2/conf.d/mysqli.ini, /etc/php5/apache2/conf.d/pdo.ini, /etc/php5/apache2/conf.d/pdo_mysql.ini'
+2014-07-21 21:27:23 - Info - Temporary directory for files upload (/tmp) is writable.
+2014-07-21 21:27:23 - Info - upload_max_filesize: 2M
+2014-07-21 21:27:23 - Info - post_max_size: 8M
+2014-07-21 21:27:23 - Info - max_file_uploads: 20
+2014-07-21 21:27:23 - Info - memory_limit is 134217728, ok.
+2014-07-21 21:27:23 - Info - session.save_path is: '/var/lib/php5'.
+2014-07-21 21:27:23 - Ok - The current PHP Version (5.3.10-1ubuntu3.13) is greater than the minimum version required to run iTop, which is (5.2.0)
+2014-07-21 21:27:23 - Ok - Required PHP extension(s): dom, hash, iconv, json, mysqli, pcre, session, simplexml, soap.
+2014-07-21 21:27:23 - Ok - Optional PHP extension(s): ldap, mcrypt.
+2014-07-21 21:27:23 - Ok - Loaded php.ini files: /etc/php5/apache2/php.ini, /etc/php5/apache2/conf.d/imap.ini, /etc/php5/apache2/conf.d/ldap.ini, /etc/php5/apache2/conf.d/mcrypt.ini, /etc/php5/apache2/conf.d/mysql.ini, /etc/php5/apache2/conf.d/mysqli.ini, /etc/php5/apache2/conf.d/pdo.ini, /etc/php5/apache2/conf.d/pdo_mysql.ini
+2014-07-21 21:27:23 - Ok - The value for session.save_path (/var/lib/php5) is writable for the web server.
+2014-07-21 21:27:26 - Info - CheckBackupPrerequisites
+2014-07-21 21:27:26 - Info - PHP functions disabled: pcntl_alarm,pcntl_fork,pcntl_waitpid,pcntl_wait,pcntl_wifexited,pcntl_wifstopped,pcntl_wifsignaled,pcntl_wexitstatus,pcntl_wtermsig,pcntl_wstopsig,pcntl_signal,pcntl_signal_dispatch,pcntl_get_last_error,pcntl_strerror,pcntl_sigprocmask,pcntl_sigwaitinfo,pcntl_sigtimedwait,pcntl_exec,pcntl_getpriority,pcntl_setpriority,
+2014-07-21 21:27:26 - Info - mysqldump -V said: mysqldump  Ver 10.13 Distrib 5.5.38, for debian-linux-gnu (x86_64)
+2014-07-21 21:27:26 - Info - operation 'async_action', peak memory usage. 8686912
+2014-07-21 21:27:29 - Info - GetApplicationVersion returns: product_name: iTop, product_version: 2.0.2.1476
+2014-07-21 21:27:50 - Info - ======= Installation starts =======
+Parameters:
+<?xml version="1.0" encoding="UTF-8"?>
+<installation>
+  <mode>upgrade</mode>
+  <preinstall>
+    <copies type="array"/>
+    <backup>
+      <destination>/var/www/itop/data/iTop-backup-2014-07-21.zip</destination>
+      <configuration_file>/var/www/itop//conf/production/config-itop.php</configuration_file>
+    </backup>
+  </preinstall>
+  <source_dir>datamodels/2.x/</source_dir>
+  <datamodel_version>2.0.2</datamodel_version>
+  <previous_configuration_file>/var/www/itop//conf/production/config-itop.php</previous_configuration_file>
+  <extensions_dir>extensions</extensions_dir>
+  <target_env>production</target_env>
+  <workspace_dir></workspace_dir>
+  <database>
+    <server>localhost</server>
+    <user>root</user>
+    <pwd>**removed**</pwd>
+    <name>itop</name>
+    <prefix>_itop</prefix>
+  </database>
+  <url>http://itop.coredial.com/</url>
+  <admin_account>
+    <user></user>
+    <pwd>**removed**</pwd>
+    <language></language>
+  </admin_account>
+  <language></language>
+  <selected_modules type="array">
+    <item>authent-external</item>
+    <item>authent-ldap</item>
+    <item>authent-local</item>
+    <item>combodo-email-synchro</item>
+    <item>itop-profiles-itil</item>
+    <item>itop-sla-computation</item>
+    <item>itop-tickets</item>
+    <item>itop-welcome-itil</item>
+    <item>itop-config-mgmt</item>
+    <item>itop-attachments</item>
+    <item>itop-datacenter-mgmt</item>
+    <item>itop-endusers-devices</item>
+    <item>itop-storage-mgmt</item>
+    <item>itop-virtualization-mgmt</item>
+    <item>itop-bridge-virtualization-storage</item>
+    <item>itop-service-mgmt-provider</item>
+    <item>itop-request-mgmt-itil</item>
+    <item>itop-incident-mgmt-itil</item>
+    <item>itop-change-mgmt</item>
+    <item>itop-problem-mgmt</item>
+    <item>email-reply</item>
+    <item>itop-simple-email-synchro</item>
+    <item>teemip-network-mgmt</item>
+    <item>teemip-ip-mgmt</item>
+    <item>teemip-ipv6-mgmt</item>
+    <item>teemip-storage-mgmt-adaptor</item>
+    <item>teemip-virtualization-mgmt-adaptor</item>
+    <item>teemip-config-mgmt-adaptor</item>
+  </selected_modules>
+  <sample_data></sample_data>
+  <old_addon></old_addon>
+  <options type="array"/>
+</installation>
+
+
+2014-07-21 21:27:50 - Info - operation 'async_action', peak memory usage. 8724728
+2014-07-21 21:27:50 - Info - operation 'async_action', peak memory usage. 8694984
+2014-07-21 21:27:50 - Info - Data file: '/tmp/itop-qvMPOa'
+2014-07-21 21:27:50 - Info - Starting backup of localhost/itop(suffix:'_itop')
+2014-07-21 21:27:50 - Info - Executing command: mysqldump --opt --default-character-set=utf8 --add-drop-database --single-transaction --host='localhost'  --user=xxxxx --password=xxxxx --result-file='/tmp/itop-qvMPOa' 'itop' '_itopapplicationsolution' '_itopasnumber' '_itopattachment' '_itopbrand' '_itopbusinessprocess' '_itopconnectableci' '_itopcontact' '_itopcontacttype' '_itopcontract' '_itopcontracttype' '_itopcustomercontract' '_itopdatabaseschema' '_itopdatacenterdevice' '_itopdbserver' '_itopdeliverymodel' '_itopdnsobject' '_itopdocument' '_itopdocumentfile' '_itopdocumentnote' '_itopdocumenttype' '_itopdocumentweb' '_itopdomain' '_itopemail_replica' '_itopenclosure' '_itopfarm' '_itopfiberchannelinterface' '_itopfunctionalci' '_itopgroup' '_itophypervisor' '_itopiosversion' '_itopipaddress' '_itopipaddressv4' '_itopipaddressv6' '_itopipblock' '_itopipblockv4' '_itopipblockv6' '_itopipconfig' '_itopipinterface' '_itopipobject' '_itopipphone' '_itopiprange' '_itopiprangeusage' '_itopiprangev4' '_itopiprangev6' '_itopipsubnet' '_itopipsubnetv4' '_itopipsubnetv6' '_itopipusage' '_itoplicence' '_itoplnkapplicationsolutiontobusinessprocess' '_itoplnkapplicationsolutiontofunctionalci' '_itoplnkconnectablecitonetworkdevice' '_itoplnkcontacttocontract' '_itoplnkcontacttofunctionalci' '_itoplnkcontacttoipobject' '_itoplnkcontacttoservice' '_itoplnkcontacttoticket' '_itoplnkcontracttodocument' '_itoplnkcustomercontracttofunctionalci' '_itoplnkcustomercontracttoprovidercontract' '_itoplnkcustomercontracttoservice' '_itoplnkdatacenterdevicetosan' '_itoplnkdeliverymodeltocontact' '_itoplnkdoctoipobject' '_itoplnkdocumenttofunctionalci' '_itoplnkdocumenttolicence' '_itoplnkdocumenttopatch' '_itoplnkdocumenttoservice' '_itoplnkdocumenttosoftware' '_itoplnkfunctionalcitoospatch' '_itoplnkfunctionalcitoprovidercontract' '_itoplnkfunctionalcitoticket' '_itoplnkgrouptoci' '_itoplnkipaddresstoipaddress' '_itoplnkipblocktolocation' '_itoplnkipinterfacetoipaddress' '_itoplnkipsubnettolocation' '_itoplnkipsubnettovlan' '_itoplnkpersontoteam' '_itoplnkphysicalinterfacetovlan' '_itoplnkservertovolume' '_itoplnkslatoslt' '_itoplnksoftwareinstancetosoftwarepatch' '_itoplnkvirtualdevicetovolume' '_itoplocation' '_itoplogicalinterface' '_itoplogicalvolume' '_itopmiddleware' '_itopmiddlewareinstance' '_itopmobilephone' '_itopmodel' '_itopnas' '_itopnasfilesystem' '_itopnetworkdevice' '_itopnetworkdevicetype' '_itopnetworkinterface' '_itoporganization' '_itoposfamily' '_itoposlicence' '_itopospatch' '_itoposversion' '_itopothersoftware' '_itoppatch' '_itoppc' '_itoppcsoftware' '_itoppdu' '_itopperipheral' '_itopperson' '_itopphone' '_itopphysicaldevice' '_itopphysicalinterface' '_itoppowerconnection' '_itoppowersource' '_itopprinter' '_itoppriv_action' '_itoppriv_action_email' '_itoppriv_action_notification' '_itoppriv_app_dashboards' '_itoppriv_app_preferences' '_itoppriv_async_send_email' '_itoppriv_async_task' '_itoppriv_auditcategory' '_itoppriv_auditrule' '_itoppriv_backgroundtask' '_itoppriv_change' '_itoppriv_changeop' '_itoppriv_changeop_create' '_itoppriv_changeop_delete' '_itoppriv_changeop_links' '_itoppriv_changeop_links_addremove' '_itoppriv_changeop_links_tune' '_itoppriv_changeop_plugin' '_itoppriv_changeop_setatt' '_itoppriv_changeop_setatt_data' '_itoppriv_changeop_setatt_encrypted' '_itoppriv_changeop_setatt_log' '_itoppriv_changeop_setatt_longtext' '_itoppriv_changeop_setatt_pwd' '_itoppriv_changeop_setatt_scalar' '_itoppriv_changeop_setatt_text' '_itoppriv_db_properties' '_itoppriv_event' '_itoppriv_event_email' '_itoppriv_event_issue' '_itoppriv_event_loginusage' '_itoppriv_event_notification' '_itoppriv_event_webservice' '_itoppriv_internaluser' '_itoppriv_link_action_trigger' '_itoppriv_module_install' '_itoppriv_query' '_itoppriv_query_oql' '_itoppriv_shortcut' '_itoppriv_shortcut_oql' '_itoppriv_sync_att' '_itoppriv_sync_att_extkey' '_itoppriv_sync_att_linkset' '_itoppriv_sync_datasource' '_itoppriv_sync_log' '_itoppriv_sync_replica' '_itoppriv_trigger' '_itoppriv_trigger_onmailupdate' '_itoppriv_trigger_onobjcreate' '_itoppriv_trigger_onobject' '_itoppriv_trigger_onportalupdate' '_itoppriv_trigger_onstatechange' '_itoppriv_trigger_onstateenter' '_itoppriv_trigger_onstateleave' '_itoppriv_trigger_onwatermark' '_itoppriv_trigger_threshold' '_itoppriv_urp_profiles' '_itoppriv_urp_userorg' '_itoppriv_urp_userprofile' '_itoppriv_user' '_itoppriv_user_local' '_itopprovidercontract' '_itoprack' '_itopsanswitch' '_itopserver' '_itopservice' '_itopservicefamilly' '_itopservicesubcategory' '_itopsla' '_itopslt' '_itopsoftware' '_itopsoftwareinstance' '_itopsoftwarelicence' '_itopsoftwarepatch' '_itopstoragesystem' '_itopsynchro_data_test' '_itoptablet' '_itoptape' '_itoptapelibrary' '_itopteam' '_itoptelephonyci' '_itopticket' '_itopticket_change' '_itopticket_incident' '_itopticket_problem' '_itopticket_request' '_itoptypology' '_itopview_ASNumber' '_itopview_ActionEmail' '_itopview_ApplicationSolution' '_itopview_Attachment' '_itopview_Brand' '_itopview_BusinessProcess' '_itopview_Change' '_itopview_ConnectableCI' '_itopview_Contact' '_itopview_ContactType' '_itopview_Contract' '_itopview_ContractType' '_itopview_CustomerContract' '_itopview_DBServer' '_itopview_DNSObject' '_itopview_DatabaseSchema' '_itopview_DatacenterDevice' '_itopview_DeliveryModel' '_itopview_Document' '_itopview_DocumentFile' '_itopview_DocumentNote' '_itopview_DocumentType' '_itopview_DocumentWeb' '_itopview_Domain' '_itopview_Enclosure' '_itopview_Farm' '_itopview_FiberChannelInterface' '_itopview_FunctionalCI' '_itopview_Group' '_itopview_Hypervisor' '_itopview_IOSVersion' '_itopview_IPAddress' '_itopview_IPBlock' '_itopview_IPConfig' '_itopview_IPInterface' '_itopview_IPObject' '_itopview_IPPhone' '_itopview_IPRange' '_itopview_IPRangeUsage' '_itopview_IPSubnet' '_itopview_IPTriggerOnWaterMark' '_itopview_IPUsage' '_itopview_IPv4Address' '_itopview_IPv4Block' '_itopview_IPv4Range' '_itopview_IPv4Subnet' '_itopview_IPv6Address' '_itopview_IPv6Block' '_itopview_IPv6Range' '_itopview_IPv6Subnet' '_itopview_Incident' '_itopview_Licence' '_itopview_Location' '_itopview_LogicalInterface' '_itopview_LogicalVolume' '_itopview_Middleware' '_itopview_MiddlewareInstance' '_itopview_MobilePhone' '_itopview_Model' '_itopview_NAS' '_itopview_NASFileSystem' '_itopview_NetworkDevice' '_itopview_NetworkDeviceType' '_itopview_NetworkInterface' '_itopview_OSFamily' '_itopview_OSLicence' '_itopview_OSPatch' '_itopview_OSVersion' '_itopview_Organization' '_itopview_OtherSoftware' '_itopview_PC' '_itopview_PCSoftware' '_itopview_PDU' '_itopview_Patch' '_itopview_Peripheral' '_itopview_Person' '_itopview_Phone' '_itopview_PhysicalDevice' '_itopview_PhysicalInterface' '_itopview_PowerConnection' '_itopview_PowerSource' '_itopview_Printer' '_itopview_Problem' '_itopview_ProviderContract' '_itopview_Rack' '_itopview_SANSwitch' '_itopview_SLA' '_itopview_SLT' '_itopview_Server' '_itopview_Service' '_itopview_ServiceFamily' '_itopview_ServiceSubcategory' '_itopview_Software' '_itopview_SoftwareInstance' '_itopview_SoftwareLicence' '_itopview_SoftwarePatch' '_itopview_StorageSystem' '_itopview_Tablet' '_itopview_Tape' '_itopview_TapeLibrary' '_itopview_Team' '_itopview_TelephonyCI' '_itopview_Ticket' '_itopview_TriggerOnObjectCreate' '_itopview_TriggerOnPortalUpdate' '_itopview_TriggerOnStateEnter' '_itopview_TriggerOnStateLeave' '_itopview_TriggerOnThresholdReached' '_itopview_Typology' '_itopview_UserRequest' '_itopview_VLAN' '_itopview_VirtualDevice' '_itopview_VirtualHost' '_itopview_VirtualMachine' '_itopview_WANLink' '_itopview_WebApplication' '_itopview_WebServer' '_itopview_WorkOrder' '_itopview_lnkApplicationSolutionToBusinessProcess' '_itopview_lnkApplicationSolutionToFunctionalCI' '_itopview_lnkConnectableCIToNetworkDevice' '_itopview_lnkContactToContract' '_itopview_lnkContactToFunctionalCI' '_itopview_lnkContactToIPObject' '_itopview_lnkContactToService' '_itopview_lnkContactToTicket' '_itopview_lnkContractToDocument' '_itopview_lnkCustomerContractToFunctionalCI' '_itopview_lnkCustomerContractToProviderContract' '_itopview_lnkCustomerContractToService' '_itopview_lnkDeliveryModelToContact' '_itopview_lnkDocToIPObject' '_itopview_lnkDocumentToFunctionalCI' '_itopview_lnkDocumentToLicence' '_itopview_lnkDocumentToPatch' '_itopview_lnkDocumentToService' '_itopview_lnkDocumentToSoftware' '_itopview_lnkFunctionalCIToOSPatch' '_itopview_lnkFunctionalCIToProviderContract' '_itopview_lnkFunctionalCIToTicket' '_itopview_lnkGroupToCI' '_itopview_lnkIPAdressToIPAddress' '_itopview_lnkIPBlockToLocation' '_itopview_lnkIPInterfaceToIPAddress' '_itopview_lnkIPSubnetToLocation' '_itopview_lnkIPSubnetToVLAN' '_itopview_lnkPersonToTeam' '_itopview_lnkPhysicalInterfaceToVLAN' '_itopview_lnkSLAToSLT' '_itopview_lnkSanToDatacenterDevice' '_itopview_lnkServerToVolume' '_itopview_lnkSoftwareInstanceToSoftwarePatch' '_itopview_lnkTriggerAction' '_itopview_lnkVirtualDeviceToVolume' '_itopvirtualdevice' '_itopvirtualhost' '_itopvirtualmachine' '_itopvlan' '_itopwanlink' '_itopwebapplication' '_itopwebserver' '_itopworkorder'
+2014-07-21 21:27:52 - Info - Archive: /var/www/itop/data/iTop-backup-2014-07-21.zip created
+2014-07-21 21:27:52 - Info - operation 'async_action', peak memory usage. 8982800
+2014-07-21 21:27:52 - Info - Compiling data model.
+2014-07-21 21:27:54 - Info - Data model successfully compiled to '/var/www/itop/env-production'.
+2014-07-21 21:27:54 - Info - operation 'async_action', peak memory usage. 17408616
+2014-07-21 21:27:54 - Info - Update Database Schema for environment 'production'.
+2014-07-21 21:27:54 - Info - MetaModel::Startup (ModelOnly = 1)
+2014-07-21 21:27:55 - Info - Renaming '_itoppriv_internalUser' into '_itoppriv_internaluser' (lowercase)
+2014-07-21 21:27:55 - Info - Renaming '_itoppriv_internalUser' failed (already done in a previous upgrade?)
+2014-07-21 21:27:55 - Info - Calling Module Handler: AttachmentInstaller::BeforeDatabaseCreation(oConfig, 1.0.0, 1.0.0)
+2014-07-21 21:27:55 - Info - Calling Module Handler: ConfigMgmtInstaller::BeforeDatabaseCreation(oConfig, 2.0.0, 2.0.0)
+2014-07-21 21:27:55 - Info - Changing enum in DB - Software::type from 'DBserver' to 'DBServer' (just a change in the case)
+2014-07-21 21:27:55 - Info - Changing enum in DB - Software::type from 'Webserver' to 'WebServer' (just a change in the case)
+2014-07-21 21:27:55 - Info - Changing enum in DB - Model::type from 'SANswitch' to 'SANSwitch' (just a change in the case)
+2014-07-21 21:27:55 - Info - Changing enum in DB - Model::type from 'IpPhone' to 'IPPhone' (just a change in the case)
+2014-07-21 21:27:55 - Info - Renaming class in DB - final class from 'DBserver' to 'DBServer': 0 rows affected
+2014-07-21 21:27:55 - Info - Renaming class in DB - final class from 'OSfamily' to 'OSFamily': 0 rows affected
+2014-07-21 21:27:55 - Info - Renaming class in DB - final class from 'OSversion' to 'OSVersion': 0 rows affected
+2014-07-21 21:27:55 - Info - Renaming class in DB - final class from 'Webserver' to 'WebServer': 0 rows affected
+2014-07-21 21:27:55 - Info - Renaming class in DB - final class from 'OSpatch' to 'OSPatch': 0 rows affected
+2014-07-21 21:27:55 - Info - Renaming class in DB - final class from 'OsLicence' to 'OSLicence': 0 rows affected
+2014-07-21 21:27:55 - Info - Renaming class in DB - final class from 'IOSversion' to 'IOSVersion': 0 rows affected
+2014-07-21 21:27:55 - Info - Renaming class in DB - final class from 'IPinterface' to 'IPInterface': 0 rows affected
+2014-07-21 21:27:55 - Info - Calling Module Handler: EndUserMgmtInstaller::BeforeDatabaseCreation(oConfig, 2.0.0, 2.0.0)
+2014-07-21 21:27:55 - Info - Renaming class in DB - final class from 'IpPhone' to 'IPPhone': 0 rows affected
+2014-07-21 21:27:55 - Info - Calling Module Handler: StorageMgmtInstaller::BeforeDatabaseCreation(oConfig, 2.0.0, 2.0.0)
+2014-07-21 21:27:55 - Info - Calling Module Handler: TicketsInstaller::BeforeDatabaseCreation(oConfig, 2.0.0, 2.0.0)
+2014-07-21 21:27:55 - Info - Calling Module Handler: ChangeManagementInstaller::BeforeDatabaseCreation(oConfig, 2.0.0, 2.0.0)
+2014-07-21 21:27:55 - Info - Calling Module Handler: ServiceMgmtProviderInstaller::BeforeDatabaseCreation(oConfig, 2.0.0, 2.0.0)
+2014-07-21 21:27:55 - Info - Changing enum in DB - SLT::request_type from 'servicerequest' to 'service_request'
+2014-07-21 21:27:55 - Info - Changing enum in DB - 0 rows updated
+2014-07-21 21:27:55 - Info - Changing enum in DB - removed useless value 'servicerequest'
+2014-07-21 21:27:55 - Info - Creating the structure in 'itop' (table names prefixed by '_itop').
+2014-07-21 21:27:58 - Ok - Database structure successfully updated.
+2014-07-21 21:27:58 - Ok - Hierchical keys rebuilt: The attribute parent_id from Organization is a hierarchical key.
+Rebuilding the fields parent_id_right and parent_id_left from table '_itoporganization'...
+Ok, table '_itoporganization' successfully updated.
+The attribute parent_id from Group is a hierarchical key.
+Rebuilding the fields parent_id_right and parent_id_left from table '_itopgroup'...
+Ok, table '_itopgroup' successfully updated.
+The attribute parent_id from Domain is a hierarchical key.
+Rebuilding the fields parent_id_right and parent_id_left from table '_itopdomain'...
+Ok, table '_itopdomain' successfully updated.
+The attribute parent_id from IPv4Block is a hierarchical key.
+Rebuilding the fields parent_id_right and parent_id_left from table '_itopipblockv4'...
+Ok, table '_itopipblockv4' successfully updated.
+The attribute parent_id from IPv6Block is a hierarchical key.
+Rebuilding the fields parent_id_right and parent_id_left from table '_itopipblockv6'...
+Ok, table '_itopipblockv6' successfully updated.
+
+2014-07-21 21:27:58 - Ok - Data sources checked: Checking Data Source 'Test'...
+Ok.
+
+2014-07-21 21:27:58 - Info - Database Schema Successfully Updated for environment 'production'.
+2014-07-21 21:27:58 - Info - operation 'async_action', peak memory usage. 92261800
+2014-07-21 21:27:58 - Info - After Database Creation
+2014-07-21 21:27:58 - Info - MetaModel::Startup (ModelOnly = 1)
+2014-07-21 21:27:59 - Info - Calling Module Handler: AttachmentInstaller::AfterDatabaseCreation(oConfig, 1.0.0, 1.0.0)
+2014-07-21 21:27:59 - Info - Initializing attachment/item_org_id - null to zero
+2014-07-21 21:27:59 - Info - Initializing attachment/item_org_id - zero to the container
+2014-07-21 21:27:59 - Info - Initializing attachment/item_org_id - 0 records have been adjusted
+2014-07-21 21:27:59 - Info - Calling Module Handler: ConfigMgmtInstaller::AfterDatabaseCreation(oConfig, 2.0.0, 2.0.0)
+2014-07-21 21:27:59 - Info - Calling Module Handler: EndUserMgmtInstaller::AfterDatabaseCreation(oConfig, 2.0.0, 2.0.0)
+2014-07-21 21:27:59 - Info - Calling Module Handler: StorageMgmtInstaller::AfterDatabaseCreation(oConfig, 2.0.0, 2.0.0)
+2014-07-21 21:27:59 - Info - Calling Module Handler: TicketsInstaller::AfterDatabaseCreation(oConfig, 2.0.0, 2.0.0)
+2014-07-21 21:27:59 - Info - Calling Module Handler: ChangeManagementInstaller::AfterDatabaseCreation(oConfig, 2.0.0, 2.0.0)
+2014-07-21 21:27:59 - Info - Calling Module Handler: ServiceMgmtProviderInstaller::AfterDatabaseCreation(oConfig, 2.0.0, 2.0.0)
+2014-07-21 21:27:59 - Info - URP_Profiles::GetPredefinedObjects() returned 13 elements.
+2014-07-21 21:27:59 - Info - Calling Module Handler: AttachmentInstaller::AfterDatabaseSetup(oConfig, 1.0.0, 1.0.0)
+2014-07-21 21:27:59 - Info - Calling Module Handler: ConfigMgmtInstaller::AfterDatabaseSetup(oConfig, 2.0.0, 2.0.0)
+2014-07-21 21:27:59 - Info - Calling Module Handler: EndUserMgmtInstaller::AfterDatabaseSetup(oConfig, 2.0.0, 2.0.0)
+2014-07-21 21:27:59 - Info - Calling Module Handler: StorageMgmtInstaller::AfterDatabaseSetup(oConfig, 2.0.0, 2.0.0)
+2014-07-21 21:27:59 - Info - Calling Module Handler: TicketsInstaller::AfterDatabaseSetup(oConfig, 2.0.0, 2.0.0)
+2014-07-21 21:27:59 - Info - Calling Module Handler: ChangeManagementInstaller::AfterDatabaseSetup(oConfig, 2.0.0, 2.0.0)
+2014-07-21 21:27:59 - Info - Calling Module Handler: ServiceMgmtProviderInstaller::AfterDatabaseSetup(oConfig, 2.0.0, 2.0.0)
+2014-07-21 21:27:59 - Info - operation 'async_action', peak memory usage. 86228680
+2014-07-21 21:27:59 - Info - MetaModel::Startup (ModelOnly = )
+2014-07-21 21:28:00 - Info - starting data load session
+2014-07-21 21:28:00 - Info - Loading file: /var/www/itop/env-production/email-reply/data.struct.ta-actions.xml
+2014-07-21 21:28:00 - Info - loading of data.struct.ta-actions.xml done.
+2014-07-21 21:28:00 - Info - Loading file: /var/www/itop/env-production/email-reply/data.struct.ta-triggers.xml
+2014-07-21 21:28:00 - Info - loading of data.struct.ta-triggers.xml done.
+2014-07-21 21:28:00 - Info - Loading file: /var/www/itop/env-production/email-reply/data.struct.ta-links.xml
+2014-07-21 21:28:00 - Info - loading of data.struct.ta-links.xml done.
+2014-07-21 21:28:00 - Info - ending data load session
+2014-07-21 21:28:00 - Info - operation 'async_action', peak memory usage. 85599120
+2014-07-21 21:28:00 - Info - MetaModel::Startup from /var/www/itop//conf/production/config-itop.php (ModelOnly = 1)
+2014-07-21 21:28:01 - Info - operation 'async_action', peak memory usage. 85785704
+2014-07-21 22:59:35 - Error - Error: Error: invalid stimulus "ev_assign" on object R-000030 in state "Assigned"..
+2014-07-23 19:48:15 - Error - Error: Could not find the object UserRequest/32.
+2014-07-24 21:37:39 - Error - Error: Error: the following parameters must be specified for this operation: class and id..
+2014-08-01 22:38:17 - Error - Error: Could not find the object UserRequest/40.
+2014-08-01 22:38:28 - Error - Error: Could not find the object UserRequest/41.
+2014-08-01 22:38:31 - Error - Error: Could not find the object UserRequest/41.
+2014-08-06 20:15:29 - Error - Error: Could not find the object UserRequest/49.
+2014-08-06 20:15:34 - Error - Error: Could not find the object UserRequest/47.
+2014-08-06 20:15:36 - Error - Error: Could not find the object UserRequest/47.
+2014-08-06 20:15:41 - Error - Error: Could not find the object UserRequest/44.
+2014-08-06 20:15:50 - Error - Error: Could not find the object UserRequest/43.
+2014-08-12 17:36:53 - Error - Error: Could not find the object UserRequest/46.
+2014-08-12 17:37:12 - Error - Error: Could not find the object UserRequest/46.
+2014-08-15 18:25:03 - Error - Error: Error: invalid stimulus "ev_resolve" on object R-000049 in state "Resolved"..
+2014-08-22 17:13:18 - Error - Error: Could not find the object UserRequest/60.
